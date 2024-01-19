@@ -1,2 +1,49 @@
-# railway_synch_videos
-Railway_synch_videos
+# Описание.
+
+## Проект Railway_Synch_Videos.
+
+## Технологии:
+* Python 3.9
+* PyQt5 5.15.10
+* Qt Designer
+* Python-telegram-bot 13.7
+* Pyscreenshot 3.1
+  
+## Описание проекта
+
+Пробный проект Railway_Synch_Videos представляет из себя медиапроигрыватель для синхронного просмотра видеоизображений с 4-х камер видеонаблюдения, расположенных на Ж/Д путях,
+с возможностью выполнения скриншота видеоизображений и отправки их в telegram.
+
+## Как запустить проект:
+
+Для корректной работы медиапроигрывателя все действия необходимо выполнять без использования виртуального окружения.
+Установку вспомогательных библиотек необходимо производить в default - пути.
+
+* Клонировать репозиторий и перейти в него в командной строке:
+
+        git clone git@github.com:RiSSoL-86/railway_synch_videos.git
+        cd railway_synch_videos
+
+* Установить вспомогательные библиотеки:
+
+        python -m pip install --upgrade pip
+        pip install PyQt5==5.15.10
+        pip install pyscreenshot==3.1
+        pip install python-telegram-bot==13.7
+
+* В переменную SCREEN_RESOLUTION необходимо указать своё разрешение экрана и запустить проект, где нас встретит Видеоплеер:
+![image](https://github.com/RiSSoL-86/railway_synch_videos/assets/110422516/7305cc95-f4a3-4637-aec8-72460b082cd6)
+
+* Нажимая на кнопки Камера 1, Камера 2, Камера 3, Камера 4 необходимо указать путь к Видеофайлам одинаковой продолжительности,
+при корректном указании медиафайла кнопка меняет цвет на 'Зелёный':
+![image](https://github.com/RiSSoL-86/railway_synch_videos/assets/110422516/15b84b30-a1eb-4fcf-ae31-6ac62c536acd)
+
+* Для отправки скриншота видеоизображений необходимо в графу TelegramID указать Ваш 10-изначный telegtam ID и нажать кнопку Send,
+в следствии чего Вам в телеграм придёт скриншот программы:
+![image](https://github.com/RiSSoL-86/railway_synch_videos/assets/110422516/dc92bcc1-adda-4777-9ef8-fae084ab95c0)
+  
+
+
+
+
+
