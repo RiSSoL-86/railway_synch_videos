@@ -3,6 +3,7 @@
 ## Проект Railway_Synch_Videos.
 
 ## Технологии:
+
 * Python 3.9
 * PyQt5 5.15.10
 * Qt Designer
