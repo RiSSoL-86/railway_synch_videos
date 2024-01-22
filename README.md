@@ -8,6 +8,7 @@
 * Qt Designer
 * Python-telegram-bot 13.7
 * Pyscreenshot 3.1
+* OpenCV
   
 ## Описание проекта
 
@@ -30,6 +31,7 @@
         pip install PyQt5==5.15.10
         pip install pyscreenshot==3.1
         pip install python-telegram-bot==13.7
+        pip install opencv-python
 
 * В переменную SCREEN_RESOLUTION необходимо указать своё разрешение экрана и запустить проект, где нас встретит Видеоплеер:
 ![image](https://github.com/RiSSoL-86/railway_synch_videos/assets/110422516/aeaf9f33-01bb-4d71-a0fb-9b15adba609d)
