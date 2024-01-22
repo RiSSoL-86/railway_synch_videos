@@ -103,9 +103,11 @@ class MainWindow(QMainWindow):
         # открываем видеозаписи и читаем к ним аннотации
         camera1, camera2, camera3, camera4 = (
             cv2.VideoCapture(
-                f'media/videos/{file}') for file in os.listdir('media/videos'))
+                f'media/videos/{file}') for file in os.listdir('media/videos')
+            if file != 'test.txt')
         annotation1, annotation2, annotation3, annotation4 = (
-            file_read(file) for file in os.listdir('media/annotations'))
+            file_read(file) for file in os.listdir('media/annotations')
+            if file != 'test.txt')
         # получаем общее кол-во кадров в самом маленьком видео из 4-х
         frame_count = min(camera1.get(cv2.CAP_PROP_FRAME_COUNT),
                           camera2.get(cv2.CAP_PROP_FRAME_COUNT),
