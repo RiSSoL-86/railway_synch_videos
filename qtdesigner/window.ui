@@ -45,7 +45,7 @@ background-color: rgb(148, 171, 255);
      <string>Камера 1</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="Annot1">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -132,7 +132,7 @@ background-color: rgb(148, 171, 255);
      <string>Камера 2</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="Annot2">
     <property name="geometry">
      <rect>
       <x>700</x>
@@ -168,7 +168,7 @@ background-color: rgb(148, 171, 255);
      <string>Камера 3</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="Annot3">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -186,7 +186,7 @@ background-color: rgb(255, 218, 166);
      <string>Аннотация 3</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_13">
+   <widget class="QPushButton" name="Annot4">
     <property name="geometry">
      <rect>
       <x>700</x>
@@ -383,15 +383,31 @@ border-radius: 10px</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QPushButton" name="SynchBtn">
+    <property name="geometry">
+     <rect>
+      <x>254</x>
+      <y>450</y>
+      <width>281</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 218, 166);</string>
+    </property>
+    <property name="text">
+     <string>Синхронизировать видео</string>
+    </property>
+   </widget>
    <zorder>Label</zorder>
    <zorder>Camera1</zorder>
-   <zorder>pushButton_2</zorder>
+   <zorder>Annot1</zorder>
    <zorder>Video1</zorder>
    <zorder>Video2</zorder>
    <zorder>Video4</zorder>
    <zorder>Video3</zorder>
    <zorder>Camera3</zorder>
-   <zorder>pushButton_7</zorder>
+   <zorder>Annot3</zorder>
    <zorder>Play</zorder>
    <zorder>Speed1</zorder>
    <zorder>Speed2</zorder>
@@ -399,10 +415,11 @@ border-radius: 10px</string>
    <zorder>Slider</zorder>
    <zorder>Send</zorder>
    <zorder>Camera4</zorder>
-   <zorder>pushButton_13</zorder>
-   <zorder>pushButton_6</zorder>
+   <zorder>Annot4</zorder>
+   <zorder>Annot2</zorder>
    <zorder>Camera2</zorder>
    <zorder>LineEdit</zorder>
+   <zorder>SynchBtn</zorder>
   </widget>
  </widget>
  <customwidgets>
@@ -414,7 +431,7 @@ border-radius: 10px</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="images/res.qrc"/>
+  <include location="../images/res.qrc"/>
  </resources>
  <connections/>
 </ui>
